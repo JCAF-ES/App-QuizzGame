@@ -125,7 +125,7 @@ desarrollarla.
   
 ## 5 - :running: Autor <a name="Autor">
   - Juancarlos@jcfa.me
-  - ##### Github: [FinalBossRel](https://github.com/FinalBossRel)
+  - ##### Github: [JCFA-REL](https://github.com/JCFA-REL)
   
 ## 6 - :speech_balloon: Conclusión <a name="Conclusión">
 
