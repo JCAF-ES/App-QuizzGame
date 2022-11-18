@@ -20,6 +20,7 @@ desarrollarla.
   en ambos EditText. También puedes dar al botón de registrarse, dónde te llevará a una nueva actividad en la que introducir tu nombre de usuario y 
   contraseña. Además, si te registras vuelves al login con la información de tu usuario y contraseña ya escritos en el editText mediante el uso de 
   OnActivityResult.
+  
   ![image](https://user-images.githubusercontent.com/63256402/202596418-43d32a4e-aa9e-4a95-9994-60b892a09a19.png)
   
   ![image](https://user-images.githubusercontent.com/63256402/202596653-866ecec9-6ba7-4a66-93b6-c4e4455e966c.png)
@@ -42,36 +43,51 @@ desarrollarla.
   implementamos hasta la práctica tres (Ilustración 5) en el que se han incorporado nuevas funcionalidades como el botón “pista”, el cual se podrá usar 
   si tenemos pistas suficientes. Cuando pulsemos sobre el botón pista, el botón de la respuesta correcta se moverá, se ha usado la clase animator para 
   realizar esta funcionalidad.
+  
   ![image](https://user-images.githubusercontent.com/63256402/202597186-9ccd980b-c774-46b1-9370-1499c4d4b5a4.png)
+  
 ### 2.3 MINIJUEGO 2
   Una vez superado el juego de las preguntas, se tendrá que superar el segundo minijuego (Ilustración 6) en el que se tienen que mover unos botones y 
   deslizarlos sobre la respuesta correcta, para ello se ha utilizado dragListener para capturar el evento y se ha reescrito el evento ACTION_DROP en 
   el que se compara si la respuesta es correcta.
+  
   ![image](https://user-images.githubusercontent.com/63256402/202597275-88a6850f-8422-46a9-8c1d-5a7368045cc1.png)
+  
 ### 2.4 MINIJUEGO 3
   En el tercer minijuego (Ilustración 7) se tendrá que encontrar las diferencias entre ambas imágenes, para ello el usuario utilizará el efecto zoom usando 
   el multitouch o doubletouch para acercar o alejar la imagen. Una vez vistas las diferencias el jugador elegirá entre cuatro opciones su respuesta.
+  
   ![image](https://user-images.githubusercontent.com/63256402/202597370-b57b8ce9-6022-49ef-8b37-648738c4a1a9.png)
+  
 ### 2.5 MINIJUEGO 4
   En el cuarto minijuego (Ilustración 8) el usuario conducirá una nave espacial con la que reunirá todos los puntos posibles, si colisiona con una bola de 
   fuego el minijuego concluirá. Para la elaboración del minijuego se han reescrito las funciones dispatchKeyEvent y onTouchEvent, además de toda la lógica 
   implementada en otras funciones. También se ha reescrito la función onBackPressed para controlar el botón de pulsar atrás, si se pulsa dos veces seguidas 
   el juego acabará, pero si solo se pulsa una vez, se ejecutará un toast preguntando si se quiere salir.
+  
   ![image](https://user-images.githubusercontent.com/63256402/202597466-97669406-73a6-4f5f-a984-9a62c4585528.png)
+  
 ### 2.6 MINIJUEGO 5
   En el minijuego 5 eres un alienígena que debe sortear paredes utilizando el acelerómetro. Para ello se ha utilizado la interfaz sensorEventListener utilizando 
   la matriz de rotación para saber el giro del dispositivo, y aumentando la velocidad hacia la dirección que está girado el dispositivo. Además, se utiliza la 
   clase surfaceView para pintar el panel de juego. El personaje principal tiene 3 imágenes que se superponen para que parezca que anda. Y la velocidad de llegada 
   de obstáculos y el tamaño de los agujeros están predefinidos por el código. Por último, se ha tenido que implementar un hilo para ejecutar el juego en él.
+  
   ![image](https://user-images.githubusercontent.com/63256402/202597591-e615c736-37f5-45e5-a528-1468c321a0d8.png)
+  
 ### 2.7 REALIDAD AUMENTADA
   Se descargo el plugin de Google Sceneform para soportar el uso de la realidad aumentada. Se implementó un frame del tipo de Sceneform, y se creó un objeto 3D, cuya 
   estructura y material fueron descargados de una página de diseños libres. En los móviles compatibles se puede hacer una foto de la copa que has ganado por superar 
   todos los juegos.
+  
   ![image](https://user-images.githubusercontent.com/63256402/202597670-5fbb1e7a-a09c-40d7-bbf5-1c600aa058e9.png)
+  
 ### 2.8 CONEXIÓN ENTRE PANTALLAS
+  
   ![image](https://user-images.githubusercontent.com/63256402/202597712-5e1878c7-7609-42fe-8eab-fcfc774aafbb.png)
+  
 ### 2.8 CONEXIÓN ENTRE ACTIVIDADES
+  
   ![image](https://user-images.githubusercontent.com/63256402/202597775-0e91b04d-742e-44f7-b530-4bf07c89ef88.png)
 
 ## 3 - :computer: Principales Clases Utilizadas <a name="Clases">
